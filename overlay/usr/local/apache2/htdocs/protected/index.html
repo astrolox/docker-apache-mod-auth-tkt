@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+	</head>
+	<body>
+		<h1>Apache mod_auth_tkt demo.</h1>
+		<h2>This is the protected area.</h2>
+		<h3>You are authenticated.</h3>
+		<p>
+			If you wish, you may <a href="/auth/logout.cgi">logout</a> now, 
+			or navigate back to the <a href="/">non-protected area</a>.
+		</p>
+		<h2>Other protected resources</h2>
+		<ul>
+			<li><a href="/protected/test.cgi">/protected/test.cgi</a></p>
+		</ul>
+		<h2>Other non-protected resources</h2>
+		<ul>
+			<li><a href="/cgi-bin/test-cgi">/cgi-bin/test-cgi</a></p>
+			<li><a href="/cgi-bin/printenv">/cgi-bin/printenv</a></p>
+		</ul>
+	</body>
+</html>
