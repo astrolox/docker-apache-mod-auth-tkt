@@ -47,7 +47,7 @@ RUN set -eux; \
 	\
 # configure the demo
 	echo "Include conf/extra/httpd-auth-tkt.conf" >> /usr/local/apache2/conf/httpd.conf; \
-	chmod -R +x /usr/local/apache2/cgi-bin/*  /usr/local/apache2/htdocs/auth/*.cgi; \
+	chmod -R +x /usr/local/apache2/cgi-bin/* /usr/local/apache2/htdocs/auth/*.cgi;  /usr/local/apache2/htdocs/protected/*.cgi; \
 	htpasswd -cb /usr/local/apache2/conf/htpasswd test-user test-password; \
 	\
 # check the configuration
